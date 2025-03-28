@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "template-fluent-sqlite",
+    name: "TemplateFluentSqlite",
     platforms: [
        .macOS(.v13)
     ],
@@ -18,7 +18,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "App",
+            name: "TemplateFluentSqlite",
             dependencies: [
                 .product(name: "Fluent", package: "fluent"),
                 .product(name: "FluentSQLiteDriver", package: "fluent-sqlite-driver"),
@@ -29,9 +29,9 @@ let package = Package(
             swiftSettings: swiftSettings
         ),
         .testTarget(
-            name: "AppTests",
+            name: "TemplateFluentSqliteTests",
             dependencies: [
-                .target(name: "App"),
+                .target(name: "TemplateFluentSqlite"),
                 .product(name: "VaporTesting", package: "vapor"),
             ],
             swiftSettings: swiftSettings

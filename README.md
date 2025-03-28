@@ -1,4 +1,4 @@
-# template-fluent-sqlite
+# TemplateFluentSqlite
 
 💧 A project built with the Vapor web framework.
 
